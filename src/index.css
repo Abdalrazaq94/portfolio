@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+@import "tw-animate-css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --border: #e5e5e5;
+  --radius: 0.5rem;
+}
+@keyframes hire-me-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.hire-me-pulse {
+  display: inline-block;
+  animation: hire-me-pulse 2s ease-in-out infinite;
+}
+
+body {
+  margin: 0;
+    background-color: #f4f3f0;
+   font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+  font-size: 22px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --radius-lg: var(--radius);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
