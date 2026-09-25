@@ -3,25 +3,12 @@ import portrait from "../assets/portrait.png";
 
 const journey = [
   {
-    domain: "socialhackersacademy.org",
-    year: "2019",
-    title: "Social Hackers Academy",
-    desc: "Learned what coding is, Athens",
-    url: "https://socialhackersacademy.org",
-  },
-  {
-    domain: "hackyourfuture.be",
-    year: "2020",
-    title: "Hack Your Future",
-    desc: "Full stack course, Brussels",
-    url: "https://hackyourfuture.be",
-  },
-  {
-    domain: "codeyourfuture.io",
-    year: "2023",
-    title: "Code Your Future",
-    desc: "Full stack developer course, Glasgow",
-    url: "https://codeyourfuture.io",
+    domain: "gcu.ac.uk",
+    year: "2025-2026",
+    title: "Glasgow Caledonian University",
+    desc: "Graduated, BSc Software Development",
+    url: "https://www.gcu.ac.uk",
+    badge: "First Class Honours",
   },
   {
     domain: "glasgowclyde.ac.uk",
@@ -31,12 +18,18 @@ const journey = [
     url: "https://www.glasgowclyde.ac.uk",
   },
   {
-    domain: "gcu.ac.uk",
-    year: "2025-2026",
-    title: "Glasgow Caledonian University",
-    desc: "Graduated, BSc Software Development",
-    url: "https://www.gcu.ac.uk",
-    badge: "First Class Honours",
+    domain: "codeyourfuture.io",
+    year: "2023",
+    title: "Code Your Future",
+    desc: "Full stack developer course, Glasgow",
+    url: "https://codeyourfuture.io",
+  },
+  {
+    domain: "hackyourfuture.be",
+    year: "2020",
+    title: "Hack Your Future",
+    desc: "Full stack course, Brussels",
+    url: "https://hackyourfuture.be",
   },
 ];
 
@@ -93,7 +86,7 @@ export default function Home() {
           />
 
           <p className="text-lg leading-relaxed mb-4 text-black">
-            Graduate software developer developer who went from zero coding knowledge to a
+            Graduate software developer who went from zero coding knowledge to a
             software development degree in six years. I build fast,
             considered interfaces and care about the details.
           </p>
@@ -116,14 +109,10 @@ export default function Home() {
             Coding journey
           </p>
 
-          <div>
-            {journey.map(function (item, i) {
-              return <TimelineItem key={item.year} item={item} isLast={i === journey.length - 1} />;
-            })}
-          </div>
+          <div className="relative flex gap-5 pb-6">
+            <div className="absolute left-[19px] top-10 h-10 w-0.5 bg-black/20"></div>
 
-          <div className="flex items-center gap-5 mt-2">
-            <div className="relative w-10 h-10 rounded-full border-2 border-black bg-green-100 flex items-center justify-center text-sm font-bold flex-shrink-0">
+            <div className="relative z-10 w-10 h-10 rounded-full border-2 border-black bg-green-100 flex items-center justify-center text-sm font-bold flex-shrink-0">
               ?
               <span className="absolute inset-0 rounded-full bg-green-300 animate-ping opacity-75"></span>
             </div>
@@ -142,6 +131,12 @@ export default function Home() {
                 </RoughNotation>
               </div>
             </div>
+          </div>
+
+          <div>
+            {journey.map(function (item, i) {
+              return <TimelineItem key={item.year} item={item} isLast={i === journey.length - 1} />;
+            })}
           </div>
         </div>
       </div>
