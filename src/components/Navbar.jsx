@@ -29,8 +29,8 @@ export default function Navbar({ onOpenCv }) {
 
   const navItems = [
     { key: "work", href: "/work", label: "Work", color: "#C9E4C5" },
-    { key: "about", href: "/about", label: "About", color: "#F3C89E" },
-    { key: "contact", href: "/contact", label: "Contact", color: "#C3D8E8" },
+    { key: "about", href: "/about", label: "About", color: "#C9E4C5" },
+    { key: "contact", href: "/contact", label: "Contact", color: "#C9E4C5" },
   ];
 
   function isActive(href) {
@@ -80,7 +80,7 @@ export default function Navbar({ onOpenCv }) {
           </div>
 
           {open ? (
-            <div className="md:hidden flex flex-col gap-4 pt-5 text-lg font-medium">
+           <div className="md:hidden flex flex-col items-start gap-4 pt-5 text-lg font-medium">
               {navItems.map(function (item) {
                 return (
                   <NavLink
