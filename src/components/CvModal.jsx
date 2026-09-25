@@ -72,7 +72,19 @@ export default function CvModal(props) {
         <div className="flex-1 w-full flex items-center justify-center bg-gray-50">
           {cvExists ? (
             <object data="/cv.pdf" type="application/pdf" className="w-full h-full">
-              <p className="text-gray-500">Unable to preview PDF.</p>
+              <div className="flex flex-col items-center gap-4 p-8 text-center">
+                <p className="text-gray-600 text-base">
+                  Preview isn't supported on this device.
+                </p>
+                <a
+                  href="/cv.pdf"
+                  download
+                  className="px-5 py-2.5 rounded-lg text-white font-bold hover:opacity-90 transition"
+                  style={{ backgroundColor: "#AB824D" }}
+                >
+                  Download CV instead
+                </a>
+              </div>
             </object>
           ) : (
             <p className="text-gray-500 text-lg">CV coming soon.</p>
