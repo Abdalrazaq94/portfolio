@@ -86,17 +86,20 @@ export default function Home() {
           />
 
           <p className="text-lg leading-relaxed mb-4 text-black">
-            Graduate software developer who went from zero coding knowledge to a
-            software development degree in six years. I build fast,
-            considered interfaces and care about the details.
+            Graduate Software Developer with a First-Class Honours degree and hands-on
+            experience building full-stack applications with React, TypeScript,
+            JavaScript, Node.js, Python and SQL. I enjoy turning ideas into reliable,
+            user-focused software and solving problems across both frontend and backend.
           </p>
+
           <p className="text-lg leading-relaxed text-black">
-            My path wasn't traditional. Bootcamps, night classes, and a lot
-            of stubborn debugging got me here before the degree did. Coding
-            for me is learning, growing, and delivering, and I look forward
-            to bringing that enthusiasm to every project I work on.{" "}
+            My route into software development has been hands-on from the start, from
+            intensive full-stack programmes and collaborative projects to university
+            and independent development. I'm always learning, experimenting with new
+            technologies and looking for opportunities to build software that solves
+            real problems.{" "}
             <a
-              href="about"
+              href="/about"
               className="inline-block border-b-2 border-green-300 animate-pulse hover:opacity-70 transition"
             >
               Read more about me
@@ -120,7 +123,7 @@ export default function Home() {
             <div className="flex-1 flex items-center justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-xl font-bold text-black">2026-2027 - Working at</p>
-                <p className="text-base text-gray-700 mt-0.5">Open to opportunities</p>
+                <p className="text-base text-gray-700 mt-0.5">Open to software engineering opportunities</p>
               </div>
 
               <div className="text-4xl font-bold hire-me-pulse">

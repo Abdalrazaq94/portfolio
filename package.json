@@ -12,6 +12,7 @@
   "dependencies": {
     "@base-ui/react": "^1.7.0",
     "@fontsource-variable/geist": "^5.3.0",
+    "@formspree/react": "^3.0.0",
     "@splinetool/react-spline": "^4.1.0",
     "@splinetool/runtime": "^1.12.98",
     "@tailwindcss/vite": "^4.3.3",
