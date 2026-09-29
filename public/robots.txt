@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abadi-dev.com/sitemap.xml
