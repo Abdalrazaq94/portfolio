@@ -13,7 +13,7 @@ import Skills from './pages/Skills'
 import Work from "./pages/Work"
 import Learning from "./pages/Learning"
 import HireMe from "./pages/HireMe"
-
+import NotFound from "./pages/NotFound";
 function App() {
   const [cvOpen, setCvOpen] = useState(false)
 
@@ -40,6 +40,7 @@ function App() {
             <Route path="/work" element={<Work />} />
             <Route path="/learning" element={<Learning />} />
             <Route path="/hire-me" element={<HireMe />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
 
           <Footer />
