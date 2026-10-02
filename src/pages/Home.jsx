@@ -169,29 +169,32 @@ export default function Home() {
       <div className="h-16 md:h-24"></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 mb-16">
-        <div>
-          <p className="font-bold text-3xl mb-4 inline-block border-b-4" style={{ borderColor: "#ecd1b3", color: "#000000" }}>
-            About
-          </p>
+      <div>
+  <p
+    className="font-bold text-3xl mb-4 inline-block border-b-4"
+    style={{ borderColor: "#ecd1b3", color: "#000000" }}
+  >
+    About
+  </p>
 
-          <p className="text-lg leading-relaxed mb-4 text-black">
-            Graduate software developer who went from zero coding knowledge to a
-            software development degree in six years. I build fast,
-            considered interfaces and care about the details.
-          </p>
-          <p className="text-lg leading-relaxed text-black">
-            My path wasn't traditional. Bootcamps, night classes, and a lot
-            of stubborn debugging got me here before the degree did. Coding
-            for me is learning, growing, and delivering, and I look forward
-            to bringing that enthusiasm to every project I work on.{" "}
-            <a
-              href="about"
-              className="inline-block border-b-2 border-green-300 animate-pulse hover:opacity-70 transition"
-            >
-              Read more about me
-            </a>
-          </p>
-        </div>
+  <p className="text-lg leading-relaxed mb-4 text-black">
+    I&apos;m a First-Class Software Development graduate focused on full-stack
+    development, with experience across frontend, backend, databases and cloud
+    technologies.
+  </p>
+
+  <p className="text-lg leading-relaxed text-black">
+    I enjoy working across the stack, from React interfaces and REST APIs to
+    Node.js and Python backends. I care about building reliable, useful
+    software and continuously improving how I develop it.{" "}
+    <a
+      href="about"
+      className="inline-block border-b-2 border-green-300 animate-pulse hover:opacity-70 transition"
+    >
+      Read more about me
+    </a>
+  </p>
+</div>
 
         <div>
           <p className="font-bold text-3xl mb-10 inline-block border-b-4" style={{ borderColor: "#88B78B", color: "#000000" }}>
