@@ -65,7 +65,7 @@ export default function Navbar({ onOpenCv }) {
 
               <span className="text-black/30">|</span>
 
-              <NavLink href="/contact" color="#F3C89E" active={isActive("/contact")}>Let's talk</NavLink>
+              <NavLink href="/contact" color="#F3C89E" active={isActive("/contact")}>Let's Talk</NavLink>
             </div>
 
             <button
