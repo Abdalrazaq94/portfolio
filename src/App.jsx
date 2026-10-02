@@ -20,12 +20,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="relative min-h-screen w-full">
-        <GridPattern
+        {/* <GridPattern
           width={40}
           height={40}
           strokeWidth={1}
           className="fixed inset-0 z-0 fill-black/5 stroke-black/10"
-        />
+        /> */}
 
         <div className="relative z-10">
           <Navbar onOpenCv={function () { setCvOpen(true); }} />
